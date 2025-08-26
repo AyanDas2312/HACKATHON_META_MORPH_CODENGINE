@@ -31,7 +31,7 @@ export default () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem isActive key={`${index}`}>
-            <Link aria-current="page" href="#">
+            <Link aria-current="page" href={`#${item.toLowerCase()}`}>
               {item}
             </Link>
           </NavbarItem>
@@ -40,7 +40,7 @@ export default () => {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} radius='full' color="primary" href="#" >
+          <Button as={Link} radius='full' color="primary" href="/api/auth/signin" >
             Sign Up
           </Button>
         </NavbarItem>
@@ -64,7 +64,7 @@ export default () => {
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href="#"
+              href={`#${item.toLowerCase()}`}
               size="lg"
             >
               {item}

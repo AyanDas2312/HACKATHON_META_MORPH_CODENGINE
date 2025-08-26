@@ -1,6 +1,6 @@
 import { Button, Chip } from "@heroui/react";
 export default () => (
-<section className="relative overflow-hidden pt-16 pb-24 bg-white dark:bg-black">
+<section className="relative overflow-hidden pt-16 pb-24 bg-white dark:bg-black" data-aos="flip-right" id="hero">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center">
       <Chip

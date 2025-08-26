@@ -1,7 +1,7 @@
 import { Button, Card, CardBody, CardHeader, Chip, Progress } from "@heroui/react";
 export default () =>
 (
-  <section className="py-24 dark:bg-black bg-white">
+  <section className="py-24 dark:bg-black bg-white" id="quiz-preview" data-aos="flip-left">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold  mb-4">
