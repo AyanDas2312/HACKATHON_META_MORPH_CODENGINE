@@ -12,7 +12,7 @@ export default () => {
   ];
   const { theme, setTheme } = useTheme();
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} className='bg-white dark:bg-black'>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
